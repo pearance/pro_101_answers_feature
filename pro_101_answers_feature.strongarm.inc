@@ -264,20 +264,6 @@ function pro_101_answers_feature_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'formblock_expose_faq';
-  $strongarm->value = 0;
-  $export['formblock_expose_faq'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'formblock_show_help_faq';
-  $strongarm->value = 0;
-  $export['formblock_show_help_faq'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_faq';
   $strongarm->value = array();
   $export['menu_options_faq'] = $strongarm;
