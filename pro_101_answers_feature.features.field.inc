@@ -74,7 +74,7 @@ function pro_101_answers_feature_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'display_summary' => 0,
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
