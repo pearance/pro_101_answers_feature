@@ -222,7 +222,7 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->value = array(
     'view_modes' => array(
       'full' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'teaser' => array(
         'custom_settings' => FALSE,
@@ -237,16 +237,16 @@ function pro_101_answers_feature_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'detailed_question' => array(
-          'weight' => '-5',
+          'weight' => '1',
         ),
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '30',
+          'weight' => '5',
         ),
         'redirect' => array(
-          'weight' => '30',
+          'weight' => '4',
         ),
       ),
       'display' => array(),
