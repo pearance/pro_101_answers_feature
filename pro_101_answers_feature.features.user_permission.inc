@@ -23,7 +23,10 @@ function pro_101_answers_feature_user_default_permissions() {
   $permissions['administer faq order'] = array(
     'name' => 'administer faq order',
     'roles' => array(
-      0 => 'developer',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'faq',
   );
@@ -102,7 +105,12 @@ function pro_101_answers_feature_user_default_permissions() {
   $permissions['view faq page'] = array(
     'name' => 'view faq page',
     'roles' => array(
-      0 => 'developer',
+      0 => 'anonymous user',
+      1 => 'assistant',
+      2 => 'authenticated user',
+      3 => 'developer',
+      4 => 'professional',
+      5 => 'support',
     ),
     'module' => 'faq',
   );
