@@ -10,7 +10,7 @@
 function pro_101_answers_feature_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-faq-body'
+  // Exported field: 'node-faq-body'.
   $fields['node-faq-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function pro_101_answers_feature_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -90,7 +91,7 @@ function pro_101_answers_feature_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-faq-field_question_category'
+  // Exported field: 'node-faq-field_question_category'.
   $fields['node-faq-field_question_category'] = array(
     'field_config' => array(
       'active' => '1',
@@ -111,6 +112,7 @@ function pro_101_answers_feature_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(

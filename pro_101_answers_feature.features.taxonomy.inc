@@ -12,10 +12,10 @@ function pro_101_answers_feature_taxonomy_default_vocabularies() {
     'question_category' => array(
       'name' => 'Question Category',
       'machine_name' => 'question_category',
-      'description' => '',
+      'description' => 'For categorizing frequently asked questions.',
       'hierarchy' => '0',
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => '-9',
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
