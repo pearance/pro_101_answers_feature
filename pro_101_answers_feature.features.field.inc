@@ -147,14 +147,16 @@ function pro_101_answers_feature_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_question_category',
       'label' => 'Question Category',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'options',
-        'settings' => array(),
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        ),
         'type' => 'options_select',
         'weight' => '3',
       ),
