@@ -14,7 +14,7 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_faq';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-rabbit-hole';
   $export['additional_settings__active_tab_faq'] = $strongarm;
 
   $strongarm = new stdClass;
