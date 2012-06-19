@@ -77,3 +77,4 @@ features[variable][] = rh_node_redirect_faq
 features[variable][] = rh_node_redirect_response_faq
 features[variable][] = show_diff_inline_faq
 features[variable][] = show_preview_changes_faq
+features[variable][] = xmlsitemap_settings_node_faq
