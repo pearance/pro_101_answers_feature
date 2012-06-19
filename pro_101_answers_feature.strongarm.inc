@@ -13,9 +13,18 @@ function pro_101_answers_feature_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_faq';
-  $strongarm->value = 'edit-xmlsitemap';
-  $export['additional_settings__active_tab_faq'] = $strongarm;
+  $strongarm->name = 'contentanalysis_faq';
+  $strongarm->value = array(
+    0 => 'enable',
+  );
+  $export['contentanalysis_faq'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'contentanalysis_type_faq_enable';
+  $strongarm->value = 1;
+  $export['contentanalysis_type_faq_enable'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -248,6 +257,20 @@ function pro_101_answers_feature_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'maxlength_js_faq';
+  $strongarm->value = '';
+  $export['maxlength_js_faq'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'maxlength_js_label_faq';
+  $strongarm->value = 'Content limited to @limit characters, remaining: <strong>@remaining</strong>';
+  $export['maxlength_js_label_faq'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_faq';
   $strongarm->value = array();
   $export['menu_options_faq'] = $strongarm;
@@ -311,6 +334,27 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->name = 'pathauto_taxonomy_term_question_category_pattern';
   $strongarm->value = 'faq-page/[term:name]';
   $export['pathauto_taxonomy_term_question_category_pattern'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_action_faq';
+  $strongarm->value = '2';
+  $export['rh_node_action_faq'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_faq';
+  $strongarm->value = '';
+  $export['rh_node_redirect_faq'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_response_faq';
+  $strongarm->value = '301';
+  $export['rh_node_redirect_response_faq'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
