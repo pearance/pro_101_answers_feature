@@ -325,14 +325,14 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_faq_pattern';
-  $strongarm->value = 'faq-page/[node:title]';
+  $strongarm->value = 'answers/[node:title]';
   $export['pathauto_node_faq_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_taxonomy_term_question_category_pattern';
-  $strongarm->value = 'faq-page/[term:name]';
+  $strongarm->value = 'answers/[term:name]';
   $export['pathauto_taxonomy_term_question_category_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
