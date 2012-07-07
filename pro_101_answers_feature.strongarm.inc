@@ -339,14 +339,14 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'rh_node_action_faq';
-  $strongarm->value = '2';
+  $strongarm->value = '3';
   $export['rh_node_action_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'rh_node_redirect_faq';
-  $strongarm->value = '';
+  $strongarm->value = 'answers';
   $export['rh_node_redirect_faq'] = $strongarm;
 
   $strongarm = new stdClass();
