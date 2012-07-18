@@ -47,9 +47,10 @@ function pro_101_answers_feature_user_default_permissions() {
   $permissions['delete any faq content'] = array(
     'name' => 'delete any faq content',
     'roles' => array(
-      0 => 'developer',
-      1 => 'professional',
-      2 => 'support',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'node',
   );
@@ -58,9 +59,10 @@ function pro_101_answers_feature_user_default_permissions() {
   $permissions['delete own faq content'] = array(
     'name' => 'delete own faq content',
     'roles' => array(
-      0 => 'developer',
-      1 => 'professional',
-      2 => 'support',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'node',
   );
@@ -68,7 +70,9 @@ function pro_101_answers_feature_user_default_permissions() {
   // Exported permission: delete terms in question_category.
   $permissions['delete terms in question_category'] = array(
     'name' => 'delete terms in question_category',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'support',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -99,7 +103,9 @@ function pro_101_answers_feature_user_default_permissions() {
   // Exported permission: edit terms in question_category.
   $permissions['edit terms in question_category'] = array(
     'name' => 'edit terms in question_category',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'support',
+    ),
     'module' => 'taxonomy',
   );
 

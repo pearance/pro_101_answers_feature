@@ -285,9 +285,38 @@ function pro_101_answers_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'nodeblock_comment_link_faq';
+  $strongarm->value = '0';
+  $export['nodeblock_comment_link_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nodeblock_faq';
+  $strongarm->value = '0';
+  $export['nodeblock_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nodeblock_node_link_faq';
+  $strongarm->value = '0';
+  $export['nodeblock_node_link_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nodeblock_view_mode_faq';
+  $strongarm->value = 'full';
+  $export['nodeblock_view_mode_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_faq';
   $strongarm->value = array(
-    0 => 'status',
+    0 => 'moderation',
+    1 => 'revision',
   );
   $export['node_options_faq'] = $strongarm;
 
@@ -369,6 +398,13 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->name = 'show_preview_changes_faq';
   $strongarm->value = 1;
   $export['show_preview_changes_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_faq';
+  $strongarm->value = 'draft';
+  $export['workbench_moderation_default_state_faq'] = $strongarm;
 
   return $export;
 }
