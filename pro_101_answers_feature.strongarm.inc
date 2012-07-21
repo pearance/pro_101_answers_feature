@@ -368,7 +368,7 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'rh_node_action_faq';
-  $strongarm->value = '3';
+  $strongarm->value = '0';
   $export['rh_node_action_faq'] = $strongarm;
 
   $strongarm = new stdClass();
