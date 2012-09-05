@@ -31,6 +31,16 @@ function pro_101_answers_feature_user_default_permissions() {
     'module' => 'faq',
   );
 
+  // Exported permission: administer question_category vocabulary terms.
+  $permissions['administer question_category vocabulary terms'] = array(
+    'name' => 'administer question_category vocabulary terms',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'vppr',
+  );
+
   // Exported permission: create faq content.
   $permissions['create faq content'] = array(
     'name' => 'create faq content',
