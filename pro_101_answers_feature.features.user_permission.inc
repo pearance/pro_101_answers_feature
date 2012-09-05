@@ -71,7 +71,8 @@ function pro_101_answers_feature_user_default_permissions() {
   $permissions['delete terms in question_category'] = array(
     'name' => 'delete terms in question_category',
     'roles' => array(
-      0 => 'support',
+      0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'taxonomy',
   );
@@ -104,7 +105,8 @@ function pro_101_answers_feature_user_default_permissions() {
   $permissions['edit terms in question_category'] = array(
     'name' => 'edit terms in question_category',
     'roles' => array(
-      0 => 'support',
+      0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'taxonomy',
   );
