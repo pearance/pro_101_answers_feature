@@ -74,6 +74,7 @@ features[variable][] = nodeblock_comment_link_faq
 features[variable][] = nodeblock_faq
 features[variable][] = nodeblock_node_link_faq
 features[variable][] = nodeblock_view_mode_faq
+features[variable][] = nodeformscols_field_placements_faq_default
 features[variable][] = pathauto_faq_pattern
 features[variable][] = pathauto_node_faq_pattern
 features[variable][] = pathauto_taxonomy_term_question_category_pattern
