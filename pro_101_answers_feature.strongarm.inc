@@ -345,7 +345,7 @@ function pro_101_answers_feature_strongarm() {
       'title' => 'Answer',
     ),
     'field_question_category' => array(
-      'region' => 'right',
+      'region' => 'main',
       'weight' => '2',
       'has_required' => FALSE,
       'title' => 'Question Category',
