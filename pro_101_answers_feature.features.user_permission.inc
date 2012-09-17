@@ -23,10 +23,8 @@ function pro_101_answers_feature_user_default_permissions() {
   $permissions['administer faq order'] = array(
     'name' => 'administer faq order',
     'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'faq',
   );
@@ -57,10 +55,8 @@ function pro_101_answers_feature_user_default_permissions() {
   $permissions['delete any faq content'] = array(
     'name' => 'delete any faq content',
     'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'node',
   );
@@ -69,10 +65,8 @@ function pro_101_answers_feature_user_default_permissions() {
   $permissions['delete own faq content'] = array(
     'name' => 'delete own faq content',
     'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'node',
   );
