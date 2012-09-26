@@ -108,6 +108,62 @@ function pro_101_answers_feature_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-faq-field_create_info'.
+  $fields['node-faq-field_create_info'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_create_info',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'markup',
+      'settings' => array(
+        'markup' => array(
+          'format' => 'plain_text',
+          'value' => 'For more info click here.
+',
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'markup',
+    ),
+    'field_instance' => array(
+      'bundle' => 'faq',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_create_info',
+      'label' => 'Create Info',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'markup',
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        ),
+        'type' => 'markup',
+        'weight' => '42',
+      ),
+    ),
+  );
+
   // Exported field: 'node-faq-field_question_category'.
   $fields['node-faq-field_question_category'] = array(
     'field_config' => array(
@@ -189,6 +245,7 @@ function pro_101_answers_feature_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Answer');
+  t('Create Info');
   t('Question Category');
 
   return $fields;

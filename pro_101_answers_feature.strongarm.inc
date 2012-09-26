@@ -23,7 +23,7 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'contentanalysis_type_faq_enable';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['contentanalysis_type_faq_enable'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -229,6 +229,12 @@ function pro_101_answers_feature_strongarm() {
       'colorbox' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_complete' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -243,6 +249,9 @@ function pro_101_answers_feature_strongarm() {
         ),
         'redirect' => array(
           'weight' => '4',
+        ),
+        'metatags' => array(
+          'weight' => '40',
         ),
       ),
       'display' => array(),
@@ -391,7 +400,7 @@ function pro_101_answers_feature_strongarm() {
       'region' => 'right',
       'weight' => '0',
       'has_required' => FALSE,
-      'title' => 'Save',
+      'title' => 'Publish',
       'hidden' => 0,
     ),
     'body' => array(
@@ -407,6 +416,27 @@ function pro_101_answers_feature_strongarm() {
       'title' => 'Question Category',
       'hidden' => 0,
     ),
+    'field_create_info' => array(
+      'region' => 'right',
+      'weight' => '2',
+      'has_required' => FALSE,
+      'title' => 'Create Info',
+      'hidden' => 0,
+    ),
+    'contentanalysis' => array(
+      'region' => 'main',
+      'weight' => '0.022',
+      'has_required' => FALSE,
+      'title' => 'Content Analysis',
+      'hidden' => 0,
+    ),
+    'metatags' => array(
+      'region' => 'main',
+      'weight' => '0.023',
+      'has_required' => FALSE,
+      'title' => 'Meta Tags',
+      'hidden' => 0,
+    ),
   );
   $export['nodeformscols_field_placements_faq_default'] = $strongarm;
 
@@ -415,8 +445,7 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_faq';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_faq'] = $strongarm;
 
@@ -424,7 +453,7 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_faq';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['node_preview_faq'] = $strongarm;
 
   $strongarm = new stdClass();
