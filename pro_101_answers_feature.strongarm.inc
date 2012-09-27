@@ -559,6 +559,13 @@ function pro_101_answers_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'savedraft_faq';
+  $strongarm->value = '1';
+  $export['savedraft_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'show_diff_inline_faq';
   $strongarm->value = 0;
   $export['show_diff_inline_faq'] = $strongarm;
