@@ -55,8 +55,10 @@ function pro_101_answers_feature_user_default_permissions() {
   $permissions['delete any faq content'] = array(
     'name' => 'delete any faq content',
     'roles' => array(
-      0 => 'developer',
-      1 => 'support',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'node',
   );
