@@ -183,6 +183,17 @@ function pro_101_answers_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'faq_omit_vocabulary';
+  $strongarm->value = array(
+    2 => 0,
+    1 => 0,
+    3 => 0,
+  );
+  $export['faq_omit_vocabulary'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'faq_qa_mark';
   $strongarm->value = 0;
   $export['faq_qa_mark'] = $strongarm;
@@ -242,6 +253,13 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->name = 'faq_title';
   $strongarm->value = 'Answers';
   $export['faq_title'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'faq_use_categories';
+  $strongarm->value = 1;
+  $export['faq_use_categories'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
