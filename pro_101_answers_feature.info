@@ -5,6 +5,7 @@ package = Pro 101 Features (G)
 php = 5.2.4
 version = 7.x-1.0
 project = pro_101_answers_feature
+dependencies[] = autocomplete_deluxe
 dependencies[] = ctools
 dependencies[] = defaultcontent
 dependencies[] = faq

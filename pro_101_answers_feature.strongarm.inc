@@ -121,7 +121,7 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'faq_count';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['faq_count'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -142,7 +142,7 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'faq_description';
-  $strongarm->value = 'This is a list of common questions for your convenience. If you have a question that is not in this list, please ask via our <a href="contact">contact form</a>.';
+  $strongarm->value = '';
   $export['faq_description'] = $strongarm;
 
   $strongarm = new stdClass();

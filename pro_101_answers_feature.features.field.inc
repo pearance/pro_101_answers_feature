@@ -168,7 +168,7 @@ function pro_101_answers_feature_field_default_fields() {
   $fields['node-faq-field_question_category'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_question_category',
@@ -235,11 +235,15 @@ function pro_101_answers_feature_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
+        'module' => 'autocomplete_deluxe',
         'settings' => array(
+          'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
+          'limit' => '10',
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'min_length' => '0',
+          'size' => '60',
         ),
-        'type' => 'options_select',
+        'type' => 'autocomplete_deluxe_taxonomy',
         'weight' => '3',
       ),
     ),
