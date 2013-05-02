@@ -58,7 +58,7 @@ function pro_101_answers_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'diff_view_mode_preview_node_faq';
-  $strongarm->value = 'diff_complete';
+  $strongarm->value = '';
   $export['diff_view_mode_preview_node_faq'] = $strongarm;
 
   $strongarm = new stdClass();

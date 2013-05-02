@@ -126,7 +126,7 @@ function pro_101_answers_feature_field_default_fields() {
       'settings' => array(
         'markup' => array(
           'format' => 'plain_text',
-          'value' => 'For more info click here.
+          'value' => '<p>For more info click here.</p>
 ',
         ),
       ),
